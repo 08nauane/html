@@ -1,0 +1,19 @@
+.form {
+    border: 1px solid #ccc;
+}
+
+input, textarea {
+width: 100%; /* Alterado para preencher a largura do formulario */
+margin-bottom: 15px; /* Aumentado o espaçamento entre os campos */
+padding: 10px;
+border: 2px solid #cab9b9;
+border-radius: 5px;
+box-sizing: border-box; /*Garante que o padding não aumente a largura */
+}
+.contato {
+max-width: 600px;
+margin: 0 auto;
+padding: 20px;
+border: 2px solid #ccc;
+border-radius: 10px;
+}

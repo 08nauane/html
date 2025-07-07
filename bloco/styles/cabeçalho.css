@@ -32,3 +32,9 @@
     border-radius: 5px;
     font-size: 10px;
 }
+
+.botao:hover{
+transform: translateY(-8px) scale(1.5);
+box-shadow: 0 0 10px #ff6139;
+text-decoration: underline;
+}
