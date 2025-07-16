@@ -184,10 +184,32 @@
 
 <div class="contato">
     <form id="contacForm">
-        <h2 class="titulo-formulario">Contate-nos</h2>
-        <input type="text" name="name" placeholder="Opcional-Seu numero de telefone">
+        <input type="text" name="name" placeholder="seu nome" required>
+        <input type="email" name="email" placeholder="Seu e-mail" required>
+        <input type="number" name="telefone" placeholder="Opcional-Seu numero de telefone">
+        <button type="submit">Enviar</button>
+        <div class="checkbox" id="dataConsent" class="verifica" name="dataConsent" required>
+            <input type="checkbox"id="dataConsent" class="verifica" name="dataConsent" required>
+            <label for="dataConsent">
+                Eu concordo com a <a href="#" data-toggle="modal" data-target="#lgpdModal">Politica de Privacidade</a> e o uso dos meus dados conforme a LGPD.
+            </label>
+        </div>
     </form>
 </div>
+
+<!--Modal LGPD-->
+<div class="modal fade" id="lgpdModal" tabindex="-1" role="dialog" aria-labelledby="lgpdModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+    <div class="modal-header">
+        <h5 class="modal-title" id="lgpdModalLabel">Lei Geral de Proteção de Dados (LGPD)</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+</div>
+<div class="modal-body">
+    <p>A Lei Geral de Proteção de Dados (LGPD) é a legislação brasileiram que regula as atividade de tratamento de dados pessoais. Ela
+        tem como objetivo proteger os direitos fundamentais de liberdade e privacidade, bem como o livre desenvolvimento da personalidade 
+    da pessoa natural.</p>
 
 <footer class="rodapé">
     <p>&copy; 2025 Domício Pedra</p>
