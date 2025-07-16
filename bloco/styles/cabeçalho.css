@@ -1,6 +1,6 @@
 .cabeçalho{
-    background: linear-gradient(rgba(100, 149, 237, 0.5), rgba(100, 149, 237, 0.5)),
-    url("../imagens/carro_germanico.jpg");/*separar imaagem do gradiente de cor*/
+    background: linear-gradient(rgba(58, 160, 219, 0.5), rgba(58, 160, 219, 0.5)),
+    url("../imagens/Carros-que-vao-sair-de-linha-em-2024.jpg");/*separar imaagem do gradiente de cor*/
     /*para uma cor mais viva mude para rgba(150, 149, 27, 0.5)*/
     background-size: cover ;/*cobrir a área do cabeçalho*/
     background-position: center;/*centraliar imagem*/
