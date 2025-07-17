@@ -3,7 +3,7 @@
     height:auto;
     max-height:600px;
     object-fit: cover;
-    border: solid rgba(0, 0, 0, 0.5);
+    border: solid rgba(58, 160, 219, 0.5);
     border-radius: 15px;
 }
 
@@ -23,7 +23,7 @@
 
 .titulo{
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .contato{
@@ -39,7 +39,7 @@
             .carousel-control-prev,
             .carousel-control-next{
                 width: 10%;
-                color: white;
+                color: rgb(255, 255, 255);
             }
             .carousel-control-prev{
                 left: -5%;
