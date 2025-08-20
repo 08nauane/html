@@ -1,0 +1,67 @@
+.form {
+    border: 1px solid #ccc;
+}
+
+input, textarea {
+width: 100%; /* Alterado para preencher a largura do formulario */
+margin-bottom: 15px; /* Aumentado o espaçamento entre os campos */
+padding: 10px;
+border: 2px solid #cab9b9;
+border-radius: 5px;
+box-sizing: border-box; /*Garante que o padding não aumente a largura */
+}
+.contato {
+max-width: 600px;
+margin: 0 auto;
+padding: 20px;
+border: 2px solid #ccc;
+border-radius: 10px;
+}
+.titulo-formulario {
+text-align: center;
+margin-bottom: 20px;
+}
+#contactForm input,
+#contactForm button {
+width: 100%;
+padding: 10px;
+margin-bottom: 15px;/* Espaço entre as caixas de texto */
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+#contactForm button {
+background-color: #007bff;
+color: white;
+border: none;
+cursor: pointer;
+}
+#contactForm button:hover {
+    background-color: #0056b3;
+}
+/* inicio da formatação doa viso da LGPD no formulario */
+.checkbox-container {
+    background-color: rgb(195, 210, 219 );
+    display: flex;
+    align-items: center;
+    padding: 2px; /* Ajuste o padding conforme o necessario */
+}
+.verifica{
+    display: flex;
+}
+
+.checkbox-container input[type="checkbox"] {
+margin: 0 2px 0 0; /* Ajusta o espaço apenas à direita dp checkbox */
+transform: scale(1.5);
+}
+
+.checkbox-container label {
+font-weight: bold;
+margin: 0; /* Remove margens adicionais ao redor do texto */
+flex-grow: 1; /* Permite que o texto use mais espaço disponivel */
+}
+
+.checkbox-container a {
+color: #007bff;
+text-decoration: underline;
+margin: 0; /*remover margens adicionar ao redor do link */
+}
