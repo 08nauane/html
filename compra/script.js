@@ -1,3 +1,17 @@
+//Cria uma div "container" e adiciona o body
+const container = document.createElement('div')
+container.id = 'lista-container';
+document.body.appendChild(container);
+
+// ===== Estilos direto no JS =====
+container.style.backgroundColor = '#f9f9f9'; // cor de fundo
+container.style.border = '2px solid #ccc';  // borda
+container.style.borderRadius = '10px';      // cantos arredondados
+container.style.padding = '20px';           // espaçamento interno
+container.style.maxWidth = '400px';         // largura maxima
+container.style.margin = '20px auto';       // centralia horizontal
+container.style.boxShadow = '0 4px 8px rgba(0,0,0,0.1)'; // sombra
+
 //Cria titulo
 const titulo = document.createElement('h1');
 titulo.textContent = 'Lista de Compras';
