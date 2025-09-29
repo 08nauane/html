@@ -1,4 +1,4 @@
-//cria uma div "conteiner" e adicionar ao body
+// Cria uma div "conteiner" e adicionar ao body
 const container = document.createElement('div');
 container.id = 'lista-conteiner';
 document.body.appendChild(container);
@@ -35,7 +35,11 @@ function adicionarItem() {
     const valor =  inputItem.value.trim();
     if (valor !== '') {
         const li = document.createElement('li');
-        li.textContent= valor;
+        li.textContent = valor;
+        li.style.padding = '4px 0'; // estilo nos itens
+
+        li.style.borderBottom = '1px solid #ccc'; //
+
         lista.appendChild(li);
         inputItem.value = '';
         inputItem.focus(); // volta o foco para o campo
