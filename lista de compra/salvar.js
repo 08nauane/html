@@ -1,4 +1,3 @@
-
 // Botão para salvar
 const btnSalvar = document.createElement('button');
 btnSalvar.textContent = 'Salvar Lista';
@@ -6,6 +5,11 @@ btnSalvar.style.display = 'block';
 btnSalvar.style.margin = '20px auto';
 btnSalvar.style.padding = '6px 12px';
 btnSalvar.style.cursor = 'pointer'; 
+btnSalvar.style.border = 'none';
+btnSalvar.style.borderRadius = '5px';
+btnSalvar.style.backgroundColor = '#FF9800'
+btnSalvar.style.color = '#fff';
+btnSalvar.style.fontWeight = 'bold';
 container.appendChild(btnSalvar)
 
 // Função para salvar a lista em um arquivo .txt

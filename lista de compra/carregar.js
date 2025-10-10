@@ -41,5 +41,5 @@ function carregarListaDoArquivo(file) {
     reader.dAsText(file);
 }
 //eventos
-btnCarregar.addEventListener('click', () =>
-)
+btnCarregar.addEventListener('click', () => inputArquivo.click());
+inputArquivo.addEventListener
