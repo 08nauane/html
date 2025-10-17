@@ -1,51 +1,66 @@
-// Cria uma div "conteiner" e adicionar ao body
+// container de div
 const container = document.createElement('div');
-container.id = 'lista-conteiner';
+container.id = 'lista-container';
 document.body.appendChild(container);
 
-//=====Estilos direto no js =====
-container.style.backgroundColor = '#f9f9f9'; //cor de fundo 
-container.style.border = '2px solid #ccc'; //borda
-container.style.borderRadius = '10px'; //cantos arredondados
-container.style.padding = '20px'; //espaçamento interno
-container.style.maxWidth = '400px'; //largura maxima
-container.style.margin = '20px auto'; //centralizar horizontalmente
-container.style.boxShadow = '0 4px 8px rgba(0,0,0,0.1)'; //sombra
+// estilo da div
+container.style.backgroundColor = 'white';
+container.style.border = '2px solid #5a5d61';
+container.style.borderRadius ='10px';
+container.style.padding = '20px';
+container.style.maxWidth ='450px';
+container.style.margin = '20px auto';
+container.style.boxShadow = '0 4px 8px #91bdbdd';
 
 
-//cria o titulo
+// titulo 
 const titulo = document.createElement('h1');
 titulo.textContent = 'Lista de Compras';
+titulo.style.textAlign = 'center';
+titulo.style.color ='white';
+titulo.style.textShadow = '2px 2px 4px #000000';    
+titulo.style.fontFamily = 'Arial, sans-serif';
+titulo.style.fontWeight = 'bold';
 container.appendChild(titulo);
 
+// input de item
 const inputItem = document.createElement('input');
 inputItem.type = 'text';
 inputItem.placeholder = ' Digite um item';
+inputItem.style.textAlign = 'center';
+inputItem.style.width = '70%';
+inputItem.style.borderRadius = '15px';
+inputItem.style.padding = '8px';
 container.appendChild(inputItem);
 
+// botao
 const btnAdd = document.createElement('button');
 btnAdd.textContent = 'Adicionar';
+btnAdd.style.borderRadius = '15px';
+btnAdd.style.margin ='1.5px';
+btnAdd.style.padding ='6px 12px';
+btnAdd.style.color = 'darkblue';
+btnAdd.style.fontWeight = 'bold';
 container.appendChild(btnAdd);
 
-const lista = document.createElement('ul');
+// criar lista
+const lista = document.createElement('ol');
+lista.style.marginTop = '15px';
 container.appendChild(lista);
 
-
+// criar a função da lista
 function adicionarItem() {
     const valor =  inputItem.value.trim();
     if (valor !== '') {
         const li = document.createElement('li');
-        li.textContent = valor;
-        li.style.padding = '4px 0'; // estilo nos itens
-
-        li.style.borderBottom = '1px solid #ccc'; //
-
+        li.textContent= valor;
         lista.appendChild(li);
         inputItem.value = '';
         inputItem.focus(); // volta o foco para o campo
     }
 };
 
+// cria a função de clicar enter e funcionar
 btnAdd.addEventListener('click', adicionarItem);
 
 inputItem.addEventListener('keydown', (event) =>{
@@ -54,10 +69,5 @@ inputItem.addEventListener('keydown', (event) =>{
     }
 });
 
-
-document.body.style.backgroundColor = 'white';
-document.body.style.textAlign = 'center';
-document.body.style.alignItems = 'center';
-
-
-
+// estilo da página inteira body
+document.body.style.backgroundColor = '#white';
